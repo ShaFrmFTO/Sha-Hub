@@ -1,0 +1,83 @@
+                            -- Sha Hub W
+
+print("Sha Hub Injected")
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Sha Hub", "BloodTheme")
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Main")
+
+    -- Main Tab
+Section:NewButton("Tower of Misery", "Tower of Misery Instant Win Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringP0a9ozepqL5J", true))()
+end)
+Section:NewButton("Infinite Yield", "Admin Script", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+Section:NewButton("Prison Life", "Exploit", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/2tPc6XrC", true))()
+end)
+
+Section:NewButton("Da Hood", "Exploit", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ImagineProUser/vortexdahood/main/vortex", true))()
+end)
+
+Section:NewButton("Arsenal Aimbot", "Exploit", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+Section:NewButton("Phantom Forces", "Exploit", function()
+    loadstring(game:HttpGet("https://ducksite.xyz/ceri/main.lua"))()
+end)
+Section:NewButton("Flee the Facility", "Exploit", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/khoaScript/scripts/master/flee-the-facility.lua"))()
+end)
+
+Section:NewButton("Strucid", "Exploit", function()
+    loadstring(game:HttpGet("https://projectevo.xyz/script/loader.lua"))()
+end)
+
+Section:NewButton("Counter Blox", "Exploit", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+    -- Player Tab
+local Tab = Window:NewTab("Player")
+local Section = Tab:NewSection("Player")
+
+Section:NewSlider("Walkspeed", "Sets amount of speed", 300, 16, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewSlider("JumpPower", "Sets amount of jump power", 500, 11, function(v)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+    end)
+
+     -- Credits Tab
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("Credits")
+
+local oldList = {
+  "Sha#9999",
+  "Shadowlol#5117"
+}
+local newList = {
+  "Shadowlol#5117",
+  "Sha#9999"
+}
+local dropdown = Section:NewDropdown("Dropdown","Coders", oldList, function()
+
+end)
+Section:NewButton("Update Dropdown", "Refreshes Dropdown", function()
+  dropdown:Refresh(newList)
+end)
+ 
+      -- Misc Tab
+local Tab = Window:NewTab("Miscellaneous")
+local Section = Tab:NewSection("Miscellaneous")
+
+Section:NewKeybind("Close UI", "Toggle UI Off With Keybind", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+
